@@ -1,0 +1,4 @@
+#Tue Jul 18 01:31:44 MSK 2017
+base.0=D\:\\GDXGameIgorSharov\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\GDXGameIgorSharov\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
