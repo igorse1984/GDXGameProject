@@ -26,7 +26,7 @@ public class MyGdxGame extends Game {
     }
     @Override
     public void dispose(){
-//        ScreenManager.getInstance().dispose
+        ScreenManager.getInstance().dispose();
     }
 
 }

@@ -2,6 +2,7 @@ package ru.sharovigor.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.math.Vector2;
 
 import java.util.HashMap;
 
@@ -43,8 +44,8 @@ public class MyGameInputPrcs implements InputProcessor {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-        map.get(pointer).x = screenX;
-        map.get(pointer).y = Gdx.graphics.getHeight() - screenY;
+        map.get(pointer).x = (int) ScreenManager.getInstance().getViewport().unproject(new Vector2(screenX, 0)).x;
+        map.get(pointer).y = (int) ScreenManager.getInstance().getViewport().unproject(new Vector2(0, screenY)).y;
         map.get(pointer).touched = true;
         return true;
     }
@@ -59,9 +60,7 @@ public class MyGameInputPrcs implements InputProcessor {
 
     @Override
     public boolean touchDragged(int screenX, int screenY, int pointer) {
-        map.get(pointer).x = screenX;
-        map.get(pointer).y = Gdx.graphics.getHeight() - screenY;
-        map.get(pointer).touched = true;
+        touchDown(screenX, screenY, pointer, 0);
         return true;
     }
 
@@ -75,8 +74,7 @@ public class MyGameInputPrcs implements InputProcessor {
         return false;
     }
 
-    // работа с результатами из Хешмапа
-    // в случае нажатия на заданную область
+    // если есть нажатие на заданную область
     public boolean checkTouchAndUptake(int x, int y, int width, int height) {
         for (TouchInfo o : map.values()) {
             if (o.touched) {

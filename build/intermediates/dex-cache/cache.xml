@@ -3,30 +3,30 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Игорь\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.6\57c2831c870743712b808384187ea856e541878f\gdx-backend-android-1.9.6.jar"
+        jar="C:\Users\IgorSE\AndroidStudioProjects\MyGDXGame\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd4493ca5da4a19363bc9780fa07299d62a7f793">
+        <dex dex="C:\Users\IgorSE\AndroidStudioProjects\MyGDXGame\android\build\intermediates\pre-dexed\debug\core-1.0_2a2a5af1ebd23074b5eb21e677457a37ce80951d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\IgorSE\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.6\57c2831c870743712b808384187ea856e541878f\gdx-backend-android-1.9.6.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="57c2831c870743712b808384187ea856e541878f">
-        <dex dex="D:\GDXGameIgorSharov\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.6_77afa99b0039658f8f97c0db14b1a53543cac438.jar" />
+        <dex dex="C:\Users\IgorSE\AndroidStudioProjects\MyGDXGame\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.6_f29f082c297bf8afe46610a9326d1e301c71d9c1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Игорь\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.6\47d1e9b890e364ec28f128e9bb3b9a12a94c164\gdx-1.9.6.jar"
+        jar="C:\Users\IgorSE\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.6\47d1e9b890e364ec28f128e9bb3b9a12a94c164\gdx-1.9.6.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="047d1e9b890e364ec28f128e9bb3b9a12a94c164">
-        <dex dex="D:\GDXGameIgorSharov\android\build\intermediates\pre-dexed\debug\gdx-1.9.6_c3d036e73b3013444ce91fee2ca5909b01f2e987.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\GDXGameIgorSharov\core\build\libs\core-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7163550423ec9de34934f73a1581ec3efc5adec4">
-        <dex dex="D:\GDXGameIgorSharov\android\build\intermediates\pre-dexed\debug\core-1.0_25aa565dca44729d552068abba532ece06657595.jar" />
+        <dex dex="C:\Users\IgorSE\AndroidStudioProjects\MyGDXGame\android\build\intermediates\pre-dexed\debug\gdx-1.9.6_950dec616694635e2b83d3830e44aa310ef34019.jar" />
     </item>
 
 </items>

@@ -27,6 +27,7 @@ class Background {
 
             textureWidth = textureStar.getWidth() / 2;
             textureHeight = textureStar.getHeight() / 2;
+
         }
 
         public void update(Human human, float dt) {

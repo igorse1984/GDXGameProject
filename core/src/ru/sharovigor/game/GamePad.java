@@ -17,6 +17,9 @@ public class GamePad {
         return ourInstance;
     }
 
+    final float WIDTH = 1280f;
+    final float HEIGHT = 720f;
+
     // текстура геймпада
     Texture back, stick;
     // векторы позиций центра геймпада (не меняется во время игры)
@@ -34,7 +37,7 @@ public class GamePad {
         rect = new Rectangle(50, 50, 200, 200);
         joyCenterX = rect.x + rect.width / 2;
         joyCenterY = rect.y + rect.height / 2;
-        position = new Vector2((float) Gdx.graphics.getWidth() / 2, (float) Gdx.graphics.getHeight() / 2);
+        position = new Vector2(WIDTH / 2, HEIGHT / 2);
         rend = false;
         m = new Vector2(0, 0);
     }
@@ -58,6 +61,7 @@ public class GamePad {
             // нулевая позиция геймпада (центр)
             m1 = new Vector2(back.getWidth() / 2, back.getHeight() / 2);
 
+           // считываем координаты стика, если они в радиусе джойстика
             if (m.cpy().sub(m1).len() < (back.getWidth() / 2) - 32) {
                 rend = true;
                 position.x = mgip.getX();

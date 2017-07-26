@@ -4,6 +4,10 @@
         "source": "C:\\Users\\igor\\IdeaProjects\\GDXGameIgorSharov\\android\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\IgorSE\\AndroidStudioProjects\\MyGDXGame\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\IgorSE\\AndroidStudioProjects\\MyGDXGame\\android\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\IgorSE\\AndroidStudioProjects\\GDXGameIgorSharov\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\IgorSE\\AndroidStudioProjects\\GDXGameIgorSharov\\android\\res\\drawable-mdpi\\ic_launcher.png"
     },

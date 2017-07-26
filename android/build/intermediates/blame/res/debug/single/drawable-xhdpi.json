@@ -10,5 +10,9 @@
     {
         "merged": "C:\\Users\\IgorSE\\AndroidStudioProjects\\GDXGameIgorSharov\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
         "source": "C:\\Users\\IgorSE\\AndroidStudioProjects\\GDXGameIgorSharov\\android\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\IgorSE\\AndroidStudioProjects\\MyGDXGame\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\IgorSE\\AndroidStudioProjects\\MyGDXGame\\android\\res\\drawable-xhdpi\\ic_launcher.png"
     }
 ]
