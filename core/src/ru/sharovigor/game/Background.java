@@ -9,16 +9,15 @@ class Background {
 
     private static Texture texture;
     private static Texture textureStar;
-    int textureWidth, textureHeight;
-    Star[] stars;
+    private int textureWidth, textureHeight;
+    private Star[] stars;
 
-    class Star {
-        Vector2 position;
-        Vector2 velocity;
+    private class Star {
+        Vector2 position, velocity;
         float scl;
         int gdxWidth, gdxHeight;
 
-        public Star() {
+        Star() {
             position = new Vector2((float) Math.random() * Gdx.graphics.getWidth(), (float) Math.random() * Gdx.graphics.getHeight());
             velocity = new Vector2((float) (Math.random() - 0.5) * 5f, (float) (Math.random() - 0.5) * 5f);
             scl = (float) Math.random() * 0.2f;
@@ -27,19 +26,17 @@ class Background {
 
             textureWidth = textureStar.getWidth() / 2;
             textureHeight = textureStar.getHeight() / 2;
-
         }
 
         public void update(Human human, float dt) {
             position.mulAdd(velocity, dt);
             position.mulAdd(human.velocity, -0.002f);
             // условия пролета за экран
-            Utils.screenBorder(position, textureStar);
-
+//            Utils.screenBorder(position, textureStar);
         }
     }
 
-    public Background() {
+    Background() {
         if (texture == null && textureStar == null) {
             texture = new Texture("background1.jpg");
             textureStar = new Texture("star.png");
@@ -50,7 +47,7 @@ class Background {
         }
     }
 
-    public void render(SpriteBatch batch) {
+    void render(SpriteBatch batch) {
         batch.draw(texture, 0, 0);
         for (Star st : stars) {
             batch.draw(textureStar, st.position.x - textureWidth, st.position.y - textureHeight, textureWidth, textureHeight, textureWidth * 2, textureHeight * 2, st.scl, st.scl, 0, 0, 0, textureWidth * 2, textureHeight * 2, false, false);
@@ -63,7 +60,7 @@ class Background {
         }
     }
 
-    public void dispose() {
+    void dispose() {
         texture.dispose();
     }
 }
